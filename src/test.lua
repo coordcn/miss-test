@@ -75,8 +75,8 @@ end
 -- @param   actual      {any}
 -- @param   expected    {object|array}
 -- @param   msg         {string}
-function Test:in(val, obj, msg)
-    local ok = utils.in(val, obj)
+function Test:has(val, obj, msg)
+    local ok = utils.has(val, obj)
     self:_test(ok, msg, "not in")
 end
 
